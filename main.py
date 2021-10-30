@@ -1,33 +1,29 @@
-# Bilan de matière de l'équation: 2*H2 + 02 --> 2*H20
+# Bilan de matière de l'équation: 3*H2 + N2 --> 2*NH3
 
-print("Bonjour, nous allons étudier la réaction entre le dihydrogène H2 et le dioxygène O2")
-
-v1 = float(input(" Entrez la volume de la quantité de matière de dihydrogène en mL: "))
-v2 = float(input(" Entrez la volume de la quantité de matière de dioxygène en mL: "))
-
-n1 = (v1*10**-3)/22.4
-n2 = (v2*10**-3)/22.4
+print("Bonjour, nous allons étudier la réaction entre le dihydrogène H2 et le diazote O2")
+n1 = float(input(" Entrez la valeur de la quantité de matière de dihydrogène en mol: "))
+n2 = float(input(" Entrez la valeur de la quantité de matière de diazote en mol: "))
 
 #création des variables de quantités de matieres à compléter après:
 n3 =0
 
 #hypothese 1:H2 est le réactif limitant
-if n1/2<n2:
-        xmax = n1/2
+if n1/3<n2:
+        xmax = n1/3
         n1f=0
         n2f= n2 - xmax
         n3f=2*xmax
         print("le dihydrogène est le réactif limitant")
 
-#hypothèse 2:O2 est le réactif limitant
-elif n1/2>n2:
+#hypothèse 2:N2 est le réactif limitant
+elif n1/3>n2:
         xmax = n2
         n2f=0
-        n1f= n1 - 2*xmax
+        n1f= n1 - 3*xmax
         n3f=2*xmax
-        print("le dioxygène est le reactif limitant")
+        print("le diazote est le reactif limitant")
 
-#hypothèse 2:O2 est le réactif limitant
+#hypothèse 3: H2 et N2 sont les réactifs limitants
 else:
         xmax = n2
         n1f=0
@@ -37,7 +33,6 @@ else:
 
 #affichage de l'état du systeme à l'état final
 print("A l'etat final, la quantité de matière de dihydrogène vaut :",n1f,"mol")
-print("A l'etat final, la quantité de matière de dioxygène vaut :",n2f,"mol")
-print("A l'etat final, la quantité de matière d'eau vaut :",n3f,"mol")
+print("A l'etat final, la quantité de matière de diazote vaut :",n2f,"mol")
+print("A l'etat final, la quantité de matière d'ammoniac vaut :",n3f,"mol")
 
-#test
