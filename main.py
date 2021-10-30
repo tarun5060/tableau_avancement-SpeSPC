@@ -40,3 +40,4 @@ print("A l'etat final, la quantité de matière de dihydrogène vaut :",n1f,"mol
 print("A l'etat final, la quantité de matière de dioxygène vaut :",n2f,"mol")
 print("A l'etat final, la quantité de matière d'eau vaut :",n3f,"mol")
 
+#test
