@@ -1,8 +1,12 @@
 # Bilan de matière de l'équation: 2*H2 + 02 --> 2*H20
 
 print("Bonjour, nous allons étudier la réaction entre le dihydrogène H2 et le dioxygène O2")
-n1 = float(input(" Entrez la valeur de la quantité de matière de dihydrogène en mol: "))
-n2 = float(input(" Entrez la valeur de la quantité de matière de dioxygène en mol: "))
+
+v1 = float(input(" Entrez la volume de la quantité de matière de dihydrogène en mL: "))
+v2 = float(input(" Entrez la volume de la quantité de matière de dioxygène en mL: "))
+
+n1 = (v1*10**-3)/22.4
+n2 = (v2*10**-3)/22.4
 
 #création des variables de quantités de matieres à compléter après:
 n3 =0
